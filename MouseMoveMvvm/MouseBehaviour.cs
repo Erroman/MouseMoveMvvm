@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Interactivity;
 using System.Windows;
-
+using System.Windows.Input;
+namespace MouseMoveMvvm { 
 public class MouseBehaviour : System.Windows.Interactivity.Behavior<FrameworkElement>
 {
     public static readonly DependencyProperty MouseYProperty = DependencyProperty.Register(
@@ -42,4 +43,5 @@ public class MouseBehaviour : System.Windows.Interactivity.Behavior<FrameworkEle
     {
         AssociatedObject.MouseMove -= AssociatedObjectOnMouseMove;
     }
+}
 }
