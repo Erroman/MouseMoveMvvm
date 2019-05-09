@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Interactivity;
+using Microsoft.Xaml.Behaviors;
 using System.Windows;
 using System.Windows.Input;
 namespace MouseMoveMvvm { 
-public class MouseBehaviour : System.Windows.Interactivity.Behavior<FrameworkElement>
+public class MouseBehaviour : Microsoft.Xaml.Behaviors.Behavior<FrameworkElement>
 {
     public static readonly DependencyProperty MouseYProperty = DependencyProperty.Register(
         "MouseY", typeof(double), typeof(MouseBehaviour), new PropertyMetadata(default(double)));
