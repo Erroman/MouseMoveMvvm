@@ -4,6 +4,9 @@
         xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
         xmlns:mouseMoveMvvm="clr-namespace:MouseMoveMvvm"
         Title="MainWindow" Height="350" Width="525">
+    <Window.DataContext>
+        <mouseMoveMvvm:MainWindowViewModel/>
+    </Window.DataContext>
     <Grid>
         <DockPanel>
             <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">

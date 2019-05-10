@@ -7,7 +7,7 @@ using Microsoft.Xaml.Behaviors;
 using System.Windows;
 using System.Windows.Input;
 namespace MouseMoveMvvm { 
-public class MouseBehaviour : Microsoft.Xaml.Behaviors.Behavior<FrameworkElement>
+public class MouseBehaviour : Behavior<FrameworkElement>
 {
     public static readonly DependencyProperty MouseYProperty = DependencyProperty.Register(
         "MouseY", typeof(double), typeof(MouseBehaviour), new PropertyMetadata(default(double)));
